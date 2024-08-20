@@ -1,0 +1,61 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="Article.SiteMaster" %>
+
+<!DOCTYPE html>
+<html lang="en">
+<head runat="server">
+
+    <asp:PlaceHolder runat="server">
+       
+    </asp:PlaceHolder>
+
+    <meta charset="utf-8">
+ <title>xyzs</title>
+ <meta name="viewport" content="" width=device-width, initialscale="1.0">
+ <link rel="stylesheet" href="article.css">
+ <%--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />--%>
+
+    <style type="text/css">
+        .auto-style1 {
+            left: -51px;
+            top: 20px;
+            width: 104%;
+        }
+        .auto-style2 {
+            width: 567px;
+        }
+    </style>
+
+</head>
+<body>
+   
+    <div>
+        <label class="log" style="margin-top:0px; top: -1px; font-weight:bold; font-size:50px;">Articles</label>
+    <button class="admin" style="cursor:pointer;"><a href="alogin.aspx" runat="server">Admin login</a></button>
+    </div>
+<nav class="auto-style1">
+        <input type="checkbox" id="check">
+<label for="check" class="checkbtn">
+  <i class="fas fa-bars"></i>
+</label>
+    <ul class="auto-style2">
+        <li class="nav-item"><a class="nav-link" runat="server" href="~/head"> Home</a></li>
+        <li class="nav-item"><a class="nav-link" runat="server" href="~/blog">blog</a></li>
+
+        <li class="nav-item"><a class="nav-link" runat="server" href="~/aboutus">
+            <link href="abta.css" rel="stylesheet" />about us</a></li>
+        <li class="nav-item"><a class="nav-link" runat="server" href="~/cont">
+            <link href="temp.css" rel="stylesheet" />contactus</a></li>
+        <li class="nav-item"><a class="nav-link" runat="server" href="~/login">
+            <link href="login.css" rel="stylesheet" />login</a></li>
+
+                <%--<input type="search" name="" placeholder="search" class="search" style="border-radius: 25px; height: 30px;text-indent: 20px;" \>--%>
+    </ul>
+</nav>
+
+       
+           <asp:ContentPlaceHolder ID="MainContent" runat="server">
+            </asp:ContentPlaceHolder>
+            <hr />
+         
+</body>
+</html>
